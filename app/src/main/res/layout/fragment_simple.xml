@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/simplefrg"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SimpleFragment"
+    android:orientation="horizontal"
+    android:weightSum="3"
+    android:layout_gravity="top"
+    android:background="#dddddddd">
+
+    <Button
+        android:id="@+id/btnImage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="12dp"
+        android:layout_weight="1"
+        android:background="#ffddff"
+        android:gravity="center"
+        android:text="image"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="12sp" />
+    <Button
+        android:id="@+id/btnNotes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Notes"
+        android:textSize="12sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_margin="12dp"
+        android:layout_weight="1"
+        android:background="#ffddff"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/btnContacts"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Contacts"
+        android:textSize="12sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_margin="12dp"
+        android:layout_weight="1"
+        android:background="#ffddff"
+        android:gravity="center"/>
+
+        <!--<LinearLayout
+            android:id="@+id/simplefrg1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffddff"
+            android:orientation="horizontal">
+    </LinearLayout>-->
+</LinearLayout>
