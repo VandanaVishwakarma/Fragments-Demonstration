@@ -5,6 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+ <!-- <SearchView
+      android:id="@+id/searchBar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:iconifiedByDefault="false"
+      android:background="@color/colorPrimary">
+     <requestFocus/>
+  </SearchView>-->
+<EditText
+    android:id="@+id/searchBar"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:iconifiedByDefault="true"
+    android:background="@color/colorPrimary"
+    android:hint="search here "
+    />
+
    <ListView
        android:id="@+id/contact_lst"
        android:layout_width="match_parent"

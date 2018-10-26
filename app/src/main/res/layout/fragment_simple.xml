@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="12dp"
         android:layout_weight="1"
-        android:background="#ffddff"
+        android:background="#dddddddd"
         android:gravity="center"
         android:text="image"
         android:textColor="@color/colorPrimaryDark"
@@ -31,7 +31,7 @@
         android:textColor="@color/colorPrimaryDark"
         android:layout_margin="12dp"
         android:layout_weight="1"
-        android:background="#ffddff"
+        android:background="#dddddddd"
         android:gravity="center"/>
     <Button
         android:id="@+id/btnContacts"
@@ -42,14 +42,6 @@
         android:textColor="@color/colorPrimaryDark"
         android:layout_margin="12dp"
         android:layout_weight="1"
-        android:background="#ffddff"
+        android:background="#dddddddd"
         android:gravity="center"/>
-
-        <!--<LinearLayout
-            android:id="@+id/simplefrg1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="#ffddff"
-            android:orientation="horizontal">
-    </LinearLayout>-->
 </LinearLayout>
