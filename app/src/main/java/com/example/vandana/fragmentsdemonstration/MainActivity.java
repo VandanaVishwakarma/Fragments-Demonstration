@@ -1,5 +1,6 @@
 package com.example.vandana.fragmentsdemonstration;
 
+import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -14,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setFragment(new SimpleFragment());
+        contextOfApp=getContextOfApp();
     }
 
     public void setFragment(Fragment fragment) {
@@ -30,6 +32,11 @@ public class MainActivity extends AppCompatActivity {
         transaction.replace(R.id.home_layout,fragment);
         transaction.commit();
 
+    }
+    public static Context contextOfApp;
+
+    public static Context getContextOfApp(){
+        return contextOfApp;
     }
 
 
