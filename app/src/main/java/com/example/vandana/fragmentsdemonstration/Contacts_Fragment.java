@@ -59,7 +59,7 @@ public class Contacts_Fragment extends Fragment{
             }
         });
 
-        setHasOptionsMenu(true);
+        //setHasOptionsMenu(true);
 
         //code for search View
 
