@@ -4,28 +4,50 @@
     android:id="@android:id/list"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
- <!-- <SearchView
-      android:id="@+id/searchBar"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:iconifiedByDefault="false"
-      android:background="@color/colorPrimary">
-     <requestFocus/>
-  </SearchView>-->
-<EditText
-    android:id="@+id/searchBar"
-    android:layout_width="match_parent"
-    android:layout_height="50dp"
-    android:iconifiedByDefault="true"
-    android:background="@color/colorPrimary"
-    android:hint="search here "
-    />
+    android:orientation="vertical"
+    android:weightSum="5">
 
-   <ListView
-       android:id="@+id/contact_lst"
-       android:layout_width="match_parent"
-       android:layout_height="match_parent"
-       android:background="@color/colorPrimaryDark"/>
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="@color/colorPrimary"
+        android:hint="search here "
+        android:iconifiedByDefault="true"/>
+
+    <ListView
+        android:id="@+id/contact_lst"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_weight="4.5"/>
+
+<LinearLayout
+    android:id="@+id/call_menus"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="2">
+
+    <Button
+        android:id="@+id/btn_call"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="Call"
+        android:background="@color/colorPrimary"/>
+
+
+    <Button
+        android:id="@+id/btn_message"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:text="Message"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"/>
+</LinearLayout>
 
 </LinearLayout>
